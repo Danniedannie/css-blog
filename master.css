@@ -39,14 +39,6 @@
     text-align: center;
 }
 
-.lower-footer {
-        align-items: center; 
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        grid-area: sm;
-}
-
 .footer{
     align-items: center; 
     display: flex; 
@@ -55,6 +47,16 @@
     grid-area: ft;
   
 }
+
+.lower-footer {
+        align-items: center; 
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        grid-area: sm;
+}
+
+
 
 .social-media-icons {
     display:flex; 
