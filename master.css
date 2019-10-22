@@ -9,7 +9,7 @@ a {
 
     width: 400px; 
     height: 300px; 
-    padding: 50 px; 
+    padding:  15px; 
     border: 1px solid black; 
     box-shadow: 10px 10px 8px #888888;
     margin: 20px; 
@@ -90,7 +90,7 @@ a {
 
     width: 400px; 
     height: 600px; 
-    padding: 50 px; 
+    padding: 20px; 
     border: 1px solid black; 
     box-shadow: 10px 10px 8px #725c5c;
     margin: 20px; 
