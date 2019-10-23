@@ -1,24 +1,40 @@
 
-
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
 a { 
     color: black; 
     margin: 2.5px; 
 }
 
- .blog-posts {
+.parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1571751857110-4d580a33fa1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+  
+    /* Set a specific height */
+    height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: main; 
+    }
 
+ .blog-posts {
     width: 400px; 
     height: 300px; 
     padding:  15px; 
-    border: 1px solid black; 
     box-shadow: 10px 10px 8px #888888;
     margin: 20px; 
     text-align: center; 
+    border-radius: 25px;  
     
 }
 
 .blog-wrapper {
-    grid-area: main; 
+    grid-area: main2; 
     display: flex; 
     justify-content: space-around;
 }
@@ -31,10 +47,12 @@ a {
 .container { 
     width: 100%; 
     display: grid; 
-    grid-template-rows: 100px 350px 100px 50px; 
+    grid-template-rows: 100px 500px 150px 350px 100px 50px; 
     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
+      "nph nph nph nph nph nph nph nph"
+      "main2 main2 main2 main2 main2 main2 main2 main2"
       "ft ft ft ft ft ft ft ft"
       "sm sm sm sm sm sm sm sm";
 
@@ -43,7 +61,16 @@ a {
 
 .header {
     grid-area: hd;
-    text-align: center;
+    text-align: left;
+}
+
+.conatiner > .newest-posts-header {
+    align-items: center; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-area: nph;
+
 }
 
 .footer{
@@ -73,11 +100,15 @@ a {
 } 
 
 @media (max-width: 900px) {
+    .header {
+        grid-area: hd;
+        text-align: left;
+    }
     .container { 
         width: 100%; 
         display: grid; 
         grid-template-columns: 400px; 
-        grid-template-rows: 100px 1000px 200px 50px;
+        grid-template-rows: 100px 1000px 100px 50px;
         grid-template-areas: 
           "hd "
           "main"
@@ -91,7 +122,6 @@ a {
     width: 400px; 
     height: 600px; 
     padding: 20px; 
-    border: 1px solid black; 
     box-shadow: 10px 10px 8px #725c5c;
     margin: 20px; 
     text-align: center; 
@@ -107,7 +137,7 @@ a {
     }
 
     .footer{
-        align-items: center; 
+        justify-content: space-evenly;
         display: flex; 
         flex-direction: row;
         justify-content: space-around;
@@ -117,7 +147,7 @@ a {
     }
 
     .lower-footer {
-        align-items: center; 
+        justify-content: space-evenly;
         display: flex; 
         flex-direction: column;
         align-items: center;
