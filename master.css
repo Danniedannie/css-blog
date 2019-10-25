@@ -9,7 +9,7 @@ a {
 
 .parallax {
     /* The image used */
-    background-image: url("https://images.unsplash.com/photo-1571751857110-4d580a33fa1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+    background-image: url("https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2892&q=80");
   
     /* Set a specific height */
     height: 500px;
@@ -47,7 +47,7 @@ a {
 .container { 
     width: 100%; 
     display: grid; 
-    grid-template-rows: 100px 500px 50px 250px 100px 50px;
+    grid-template-rows: 75px 500px 50px 250px 100px 100px;
     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
@@ -69,6 +69,8 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: nph;
+    font-size: 30px; 
+    padding-top: 20px;
 
 }
 
@@ -98,7 +100,16 @@ a {
     grid-area: sm;
 } 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+
+    .newest-posts-header {
+       display: none; 
+
+    }
+
+    .parallax {
+        display: none;
+    }
     .header {
         grid-area: hd;
         text-align: left;
@@ -107,10 +118,9 @@ a {
         width: 100%; 
         display: grid; 
         grid-template-columns: 400px; 
-        grid-template-rows: 100px 150px 1000px 100px 50px;
+        grid-template-rows: 100px 1000px 200px 50px;
         grid-template-areas: 
           "hd "
-          "nph"
           "main"
           "ft"
           "sm ";
