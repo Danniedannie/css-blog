@@ -29,12 +29,12 @@ a {
     box-shadow: 10px 10px 8px #888888;
     margin: 20px; 
     text-align: center; 
-    border-radius: 25px;  
+    border-radius: 25px;
     
 }
 
 .blog-wrapper {
-    grid-area: main2; 
+    grid-area: main2;
     display: flex; 
     justify-content: space-around;
 }
@@ -47,7 +47,7 @@ a {
 .container { 
     width: 100%; 
     display: grid; 
-    grid-template-rows: 100px 500px 150px 350px 100px 50px; 
+    grid-template-rows: 100px 500px 50px 250px 100px 50px;
     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
@@ -58,15 +58,14 @@ a {
 
 
 }
-
 .header {
     grid-area: hd;
     text-align: left;
 }
 
-.conatiner > .newest-posts-header {
-    align-items: center; 
-    display: flex; 
+.container > .newest-posts-header {
+    align-items: center;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: nph;
@@ -108,13 +107,23 @@ a {
         width: 100%; 
         display: grid; 
         grid-template-columns: 400px; 
-        grid-template-rows: 100px 1000px 100px 50px;
+        grid-template-rows: 100px 150px 1000px 100px 50px;
         grid-template-areas: 
           "hd "
+          "nph"
           "main"
           "ft"
           "sm ";
 
+    }
+
+    .container > .newest-posts-header {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-area: nph;
+    
     }
 
     .blog-posts {
