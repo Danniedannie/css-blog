@@ -1,10 +1,23 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    margin: 0px; 
 }
 a { 
     color: black; 
     margin: 2.5px; 
+}
+
+.parallax-text {
+    width: 170px;
+    border: 15px; 
+    padding: 25px;
+    margin: 100px; 
+    background: white;
+    border-color: black; 
+    font-weight: bold; 
+    font-size: 19px;
+    text-align: center;
 }
 
 .parallax {
@@ -20,6 +33,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: main; 
+    margin: 0px; 
     }
 
  .blog-posts {
@@ -47,7 +61,7 @@ a {
 .container { 
     width: 100%; 
     display: grid; 
-    grid-template-rows: 75px 500px 50px 250px 100px 100px;
+    grid-template-rows: 75px 500px 50px 200px 150px 100px;
     grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "main main main main main main main main"
@@ -61,6 +75,10 @@ a {
 .header {
     grid-area: hd;
     text-align: left;
+    background-image: url(full-bloom.png);
+    margin-top: -10px;  
+    padding-bottom: 10px;
+    padding-left: 20px;  
 }
 
 .container > .newest-posts-header {
@@ -80,6 +98,9 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: ft;
+    padding-top: 75px; 
+    padding-bottom: 75px;
+    background-image: url(full-bloom.png); 
   
 }
 
@@ -89,6 +110,8 @@ a {
     justify-content: space-evenly;
     grid-area: sm; 
     color: black; 
+    padding-bottom: 20px; 
+    background-image: url(full-bloom.png); 
     
 }
 
@@ -98,27 +121,25 @@ a {
     flex-direction: column;
     align-items: center;
     grid-area: sm;
+    background-image: url(full-bloom.png); 
 } 
 
 @media (max-width: 1000px) {
 
-    .newest-posts-header {
-       display: none; 
-
-    }
 
     .parallax {
         display: none;
     }
     .header {
+        padding-top: 20px;
         grid-area: hd;
         text-align: left;
     }
     .container { 
         width: 100%; 
         display: grid; 
-        grid-template-columns: 400px; 
-        grid-template-rows: 100px 1000px 200px 50px;
+        grid-template-columns: 1000px; 
+        grid-template-rows: 100px 1400px 100px 100px;
         grid-template-areas: 
           "hd "
           "main"
@@ -128,18 +149,13 @@ a {
     }
 
     .container > .newest-posts-header {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        grid-area: nph;
-    
+        display: none; 
     }
 
     .blog-posts {
 
-    width: 400px; 
-    height: 600px; 
+    width: 800px; 
+    height: 2000px; 
     padding: 20px; 
     box-shadow: 10px 10px 8px #725c5c;
     margin: 20px; 
@@ -150,8 +166,9 @@ a {
     .blog-wrapper { 
     grid-area: main; 
     display: flex; 
+    align-items: center;
     flex-direction: column;
-    align-content: center;
+
             
     }
 
@@ -161,7 +178,7 @@ a {
         flex-direction: row;
         justify-content: space-around;
         grid-area: ft;
-        padding-top: 20px; 
+        padding-bottom: 75px; 
       
     }
 
@@ -178,7 +195,8 @@ a {
         flex-direction: row;
         justify-content: space-evenly;
         grid-area: sm; 
-        color: black; 
+        color: black;
+        padding-bottom: 20px;  
         
     }
 
