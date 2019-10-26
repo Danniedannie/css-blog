@@ -10,12 +10,12 @@ a {
 
 .parallax-text {
     width: 170px;
-    border: 15px; 
+    border: 15px;
     padding: 25px;
-    margin: 100px; 
+    margin: 100px;
     background: white;
-    border-color: black; 
-    font-weight: bold; 
+    border-color: black;
+    font-weight: bold;
     font-size: 19px;
     text-align: center;
 }
@@ -33,7 +33,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: main; 
-    margin: 0px; 
+    margin: 0px;
     }
 
  .blog-posts {
@@ -76,9 +76,9 @@ a {
     grid-area: hd;
     text-align: left;
     background-image: url(full-bloom.png);
-    margin-top: -10px;  
+    margin-top: -10px;
     padding-bottom: 10px;
-    padding-left: 20px;  
+    padding-left: 20px;
 }
 
 .container > .newest-posts-header {
@@ -98,9 +98,9 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: ft;
-    padding-top: 75px; 
+    padding-top: 75px;
     padding-bottom: 75px;
-    background-image: url(full-bloom.png); 
+    background-image: url(full-bloom.png);
   
 }
 
@@ -110,8 +110,8 @@ a {
     justify-content: space-evenly;
     grid-area: sm; 
     color: black; 
-    padding-bottom: 20px; 
-    background-image: url(full-bloom.png); 
+    padding-bottom: 20px;
+    background-image: url(full-bloom.png);
     
 }
 
@@ -138,7 +138,7 @@ a {
     .container { 
         width: 100%; 
         display: grid; 
-        grid-template-columns: 1000px; 
+        grid-template-columns: 1000px;
         grid-template-rows: 100px 1400px 100px 100px;
         grid-template-areas: 
           "hd "
@@ -154,9 +154,9 @@ a {
 
     .blog-posts {
 
-    width: 800px; 
-    height: 2000px; 
-    padding: 20px; 
+    width: 800px;
+    height: 2000px;
+    padding: 20px;
     box-shadow: 10px 10px 8px #725c5c;
     margin: 20px; 
     text-align: center; 
@@ -178,7 +178,7 @@ a {
         flex-direction: row;
         justify-content: space-around;
         grid-area: ft;
-        padding-bottom: 75px; 
+        padding-bottom: 75px;
       
     }
 
@@ -196,7 +196,7 @@ a {
         justify-content: space-evenly;
         grid-area: sm; 
         color: black;
-        padding-bottom: 20px;  
+        padding-bottom: 20px;
         
     }
 
