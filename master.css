@@ -114,12 +114,12 @@ footer {
     background-image: url(full-bloom.png);
 }
 
-@media (max-width: 736px) {
+@media (min-width: 736px) and (max-width: 1365px) {
     .parallax {
         display: none;
     }
     .header {
-        width: 1000px;
+        width: 411px;
         padding-top: 20px;
         grid-area: hd;
         text-align: left;
@@ -127,7 +127,7 @@ footer {
     .container {
         width: 100%;
         display: grid;
-        grid-template-columns: 800px;
+        grid-template-columns: 411px;
         grid-template-rows: 100px 1500px 100px 150px;
         grid-template-areas: "hd " "main" "ft" "sm ";
     }
@@ -150,7 +150,7 @@ footer {
         grid-area: main;
     }
     footer {
-        width: 1000px;
+        width: 411px;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -170,7 +170,7 @@ footer {
         background-image: url(full-bloom.png);
     }
     .lower-footer {
-        width: 1000px;
+        width: 411px;
         padding-right: 100px;
         align-items: center;
         display: flex;
@@ -186,7 +186,7 @@ footer {
         display: none;
     }
     .header {
-        width: 411px;
+        width: 1000px;
         padding-top: 20px;
         grid-area: hd;
         text-align: left;
@@ -220,7 +220,7 @@ footer {
         margin-bottom: -200px;
     }
     footer {
-        width: 411px;
+        width: 500px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -239,7 +239,7 @@ footer {
         background-image: url(full-bloom.png);
     }
     .lower-footer {
-        width: 1400px;
+        width: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;

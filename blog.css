@@ -84,7 +84,7 @@ footer {
 .container {
     width: 100%;
     display: grid;
-    grid-template-rows: 75px 50px 500px 100px 100px;
+    grid-template-rows: 75px 50px 500px 100px 175px;
     grid-template-areas: "hd hd hd hd hd hd hd hd" "title title title title title title title title" "main main main main main main main main" "ft ft ft ft ft ft ft ft" "sm sm sm sm sm sm sm sm";
 }
 
