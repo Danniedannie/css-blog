@@ -31,7 +31,7 @@ a {
     padding-top: 50px;
 }
 
-.article-1 {
+article {
     width: 70%;
     font-size: 20px;
     text-align: left;
@@ -110,25 +110,33 @@ a {
 @media (max-width: 700px) {
     .container {
         display: grid;
-        grid-template-columns: 400px;
+        grid-template-columns: 411px;
         grid-template-rows: 150px 100px 1600px 100px 100px;
         grid-template-areas: "hd" "title" "main" "ft" "sm ";
     }
-    .article-1 {
+    article {
         font-size: 20px;
         line-height: 1.5;
         padding-top: 10px;
-        padding-right: 50px;
         grid-area: main;
+        padding-right: 20px;
     }
     .blog-wrapper-1 {
         width: 75%;
-        margin-left: -30px;
         grid-area: main;
         display: flex;
         flex-direction: column;
+        margin-left: -25px;
     }
     .blog1 {
         display: none;
+    }
+    .header {
+        grid-area: hd;
+        text-align: left;
+        background-image: url(full-bloom.png);
+        margin-top: -10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
     }
 }
