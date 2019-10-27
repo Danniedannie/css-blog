@@ -1,11 +1,11 @@
-
 body {
     font-family: 'Noto Sans', sans-serif;
-    margin: 0px; 
+    margin: 0px;
 }
-a { 
-    color: black; 
-    margin: 2.5px; 
+
+a {
+    color: black;
+    margin: 2.5px;
 }
 
 .parallax-text {
@@ -23,55 +23,46 @@ a {
 .parallax {
     /* The image used */
     background-image: url("https://images.unsplash.com/photo-1500051638674-ff996a0ec29e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2892&q=80");
-  
     /* Set a specific height */
     height: 500px;
-  
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-area: main; 
+    grid-area: main;
     margin: 0px;
-    }
+}
 
- .blog-posts {
-    width: 400px; 
-    height: 300px; 
-    padding:  15px; 
+.blog-posts {
+    width: 400px;
+    height: 300px;
+    padding: 15px;
     box-shadow: 10px 10px 8px #888888;
-    margin: 20px; 
-    text-align: center; 
+    margin: 20px;
+    text-align: center;
     border-radius: 25px;
-    
 }
 
 .blog-wrapper {
     grid-area: main2;
-    display: flex; 
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
 .date {
-    color: grey; 
-    font-size: 15px; 
+    color: grey;
+    font-size: 15px;
 }
 
-.container { 
-    width: 100%; 
-    display: grid; 
+.container {
+    width: 100%;
+    display: grid;
     grid-template-rows: 75px 500px 50px 200px 150px 100px;
-    grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main main main"
-      "nph nph nph nph nph nph nph nph"
-      "main2 main2 main2 main2 main2 main2 main2 main2"
-      "ft ft ft ft ft ft ft ft"
-      "sm sm sm sm sm sm sm sm";
-
-
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "main main main main main main main main" "nph nph nph nph nph nph nph nph" "main2 main2 main2 main2 main2 main2 main2 main2" "ft ft ft ft ft ft ft ft" "sm sm sm sm sm sm sm sm";
 }
+
 .header {
     grid-area: hd;
     text-align: left;
@@ -81,52 +72,47 @@ a {
     padding-left: 20px;
 }
 
-.container > .newest-posts-header {
+.container>.newest-posts-header {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: nph;
-    font-size: 30px; 
+    font-size: 30px;
     padding-top: 20px;
-
 }
 
-.footer{
-    align-items: center; 
-    display: flex; 
+footer {
+    align-items: center;
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     grid-area: ft;
     padding-top: 75px;
     padding-bottom: 75px;
     background-image: url(full-bloom.png);
-  
 }
 
 .social-media-icons {
-    display:flex; 
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    grid-area: sm; 
-    color: black; 
+    grid-area: sm;
+    color: black;
     padding-bottom: 20px;
     background-image: url(full-bloom.png);
-    
 }
 
 .lower-footer {
-    align-items: center; 
-    display: flex; 
+    align-items: center;
+    display: flex;
     flex-direction: column;
     align-items: center;
     grid-area: sm;
-    background-image: url(full-bloom.png); 
-} 
+    background-image: url(full-bloom.png);
+}
 
 @media (max-width: 1000px) {
-
-
     .parallax {
         display: none;
     }
@@ -135,69 +121,29 @@ a {
         grid-area: hd;
         text-align: left;
     }
-    .container { 
-        width: 100%; 
-        display: grid; 
-        grid-template-columns: 1000px;
-        grid-template-rows: 100px 1400px 100px 100px;
-        grid-template-areas: 
-          "hd "
-          "main"
-          "ft"
-          "sm ";
-
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 1100px 100px 100px;
+        grid-template-areas: "hd " "main" "ft" "sm ";
     }
-
-    .container > .newest-posts-header {
-        display: none; 
+    .container>.newest-posts-header {
+        display: none;
     }
-
     .blog-posts {
-
-    width: 800px;
-    height: 2000px;
-    padding: 20px;
-    box-shadow: 10px 10px 8px #725c5c;
-    margin: 20px; 
-    text-align: center; 
-    
+        width: 350px;
+        height: 500px;
+        box-shadow: 10px 10px 8px #725c5c;
+        margin: 20px;
+        text-align: center;
+        grid-area: main;
     }
-
-    .blog-wrapper { 
-    grid-area: main; 
-    display: flex; 
-    align-items: center;
-    flex-direction: column;
-
-            
-    }
-
-    .footer{
-        justify-content: space-evenly;
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-around;
-        grid-area: ft;
-        padding-bottom: 75px;
-      
-    }
-
-    .lower-footer {
-        justify-content: space-evenly;
-        display: flex; 
-        flex-direction: column;
+    .blog-wrapper {
+        grid-area: main;
+        display: flex;
         align-items: center;
-        grid-area: sm;
+        flex-direction: column;
+        grid-area: main;
     }
-    
-    .social-media-icons {
-        display:flex; 
-        flex-direction: row;
-        justify-content: space-evenly;
-        grid-area: sm; 
-        color: black;
-        padding-bottom: 20px;
-        
-    }
-
 }
