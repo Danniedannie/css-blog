@@ -114,7 +114,8 @@ footer {
     background-image: url(full-bloom.png);
 }
 
-@media (min-width: 736px) and (max-width: 1365px) {
+
+/* @media (min-width: 736px) and (max-width: 1365px) {
     .parallax {
         display: none;
     }
@@ -246,4 +247,4 @@ footer {
         grid-area: sm;
         background-image: url(full-bloom.png);
     }
-}
+} */

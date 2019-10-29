@@ -1,1 +1,64 @@
-/* media queries for main page//*
+/* media queries for main page */
+
+@media (max-width: 768px) {
+    .parallax {
+        display: none;
+    }
+    .header {
+        grid-area: hd;
+        text-align: left;
+    }
+    .container>.newest-posts-header {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 414px;
+        grid-template-rows: 150px 1000px 200px 50px;
+        grid-template-areas: "hd " "main" "ft" "sm ";
+    }
+    .blog-posts {
+        width: 300px;
+        height: 600px;
+        padding: 50 px;
+        border: 1px solid black;
+        box-shadow: 10px 10px 8px #725c5c;
+        margin: 20px;
+        text-align: center;
+        margin-top: 50px;
+        grid-area: main;
+    }
+    .blog-wrapper {
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 225px;
+        padding-left: 20px;
+    }
+    footer {
+        width: 414px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        grid-area: ft;
+        padding-top: 20px;
+    }
+    .lower-footer {
+        width: 414px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: sm;
+    }
+    .social-media-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        grid-area: sm;
+        color: black;
+    }
+}
